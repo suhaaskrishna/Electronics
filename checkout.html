@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Shop</title>
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap links -->
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <!-- fonts links -->
+<title>Zugi Checkout</title>
+</head>
+<body>
+  <div>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href=""><img src="./WhatsApp Image 2024-01-19 at 1.00.01 PM.jpeg" alt="" width="250px" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <center> -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: aqua;" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Electronic Accessories</a></li>
+                                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                <li><a class="dropdown-item" href="#">FootWear</a></li>
+                                <li><a class="dropdown-item" href="#">Groceries</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- </center> -->
+                
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="d-flex">
+                        <a class="nav-link active" aria-current="page" href="#"><img src="./images/profile.png" width="30" alt=""></a>
+                      </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+     <!-- <form action="/action_page.php"> -->
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-bitcoin"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-50">
+          <h3>UPI Payment</h3>
+          <label for="fname">Accepted UPI ID'S</label>
+          <div class="icon-container">
+            <i class="fa-brands fa-google-pay"></i>
+            <i class="fa-brands fa-amazon-pay"></i>
+            <i class="fa-brands fa-apple-pay"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-alipay"></i>
+          </div>
+          <label for="cname">Name</label>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+          <label for="ccnum">UPI Address</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            </div>
+          </div>
+        </div>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+       <!-- Loading spinner -->
+       <div id="loadingSpinner" style="display: none;">
+        <input type="submit" value="Continue to checkout" class="btn">
+        <img src="image/gif.gif" alt="Loading..." width="50px" height="50px">
+        <p>Processing payment...</p>
+    </div>
+
+        <a href="./zugi electronics.html" >Go back</a>
+
+      <!--</form>-->
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+    <dev>
+      <footer class="container-fluid">
+          <div class="row border-top mt-5 py-3 border-secondary">
+              <div class="col ml-md-2 Footer">
+                  <h6>ABOUT</h6>
+                  <div>
+                      <a href="#">Contact Us</a> <br>
+                      <a href="#">About Us</a> <br>
+                      <a href="#">Careers</a> <br>
+                      <a href="#">Zugi Stories</a> <br>
+                      <a href="#">Wholesale</a>
+                  </div>
+              </div>
+              <div class="col Footer">
+                  <h6>HELP</h6>
+                  <div>
+                      <a href="#">Payments</a> <br>
+                      <a href="#">Shipping</a> <br>
+                      <a href="#">Cancellation & Returns</a> <br>
+                      <a href="#">FAQ</a> <br>
+                      <a href="#">Report</a> 
+                  </div>
+              </div>
+              <div class="col Footer">
+                  <h6>POLICY</h6>
+                  <div>
+                      <a href="#">Return Policy</a> <br>
+                      <a href="#">Term of Use</a> <br>
+                      <a href="#">Security</a> <br>
+                      <a href="#">Privacy</a> <br>
+                      <a href="#">Sitemap</a> <br>
+                      <a href="#">EPR Compliance</a>
+                  </div>
+              </div>
+              <div class="col Footer">
+                  <h6>SOCIAL</h6>
+                  <div>
+                      <a href="#">Facebook</a> <br>
+                      <a href="#">Twitter</a> <br>
+                      <a href="#">You Tube</a> <br>
+                      <a href="#">Instagram</a> <br>
+                  </div>
+              </div>
+              <div class="col Footer border-left border-secondary">
+                  <h6>Mail Us:</h6>
+                  <div>
+                      <p>zugiinternational@gmail.com,</p>
+                    
+                      <p>London,UK</p>
+                  </div>
+              </div>
+              <div class="col Footer">
+                  <h6>Registered Office Address:</h6>
+                  <div>
+                      <p>Zugi International ,</p>
+                     
+                      <p>London, NW1 4NP,</p>
+                      <p> UK</p>
+                      <p>CIN : U51109KA2012PTC066107</p>
+                      <p>Telephone: <a href="#" class="text-primary">+44 20 7123 4567</a></p>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="row border-top mt-5 py-3 border-secondary">
+              <div class="col">
+                  <i class="fa fa-briefcase text-warning"></i>
+                  <span>Sell On Zugi</span>
+              </div>
+              <div class="col">
+                  <i class="fab fa-stumbleupon-circle text-warning"></i>
+                  <span>Advertise</span>
+              </div>
+              <div class="col">
+                  <i class="fa fa-gift text-warning"></i>
+                  <span>Gift Cards</span>
+              </div>
+              <div class="col">
+                  <i class="fa fa-question-circle text-warning"></i>
+                  <span>Help Center</span>
+              </div>
+              <div class="col col-md-2 col-xs-4">
+                  <span>&copy; 2024 Zugi International. All rights reserved</span>
+              </div>
+              <div class="col col-md-4 col-xs-6">
+                  <img class="img-fluid" src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_7934bc.svg">
+              </div>
+          </div>
+  
+      </footer>
+  </dev>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="zugicart.js"></script>
+
+
+</body>
+</html>
